@@ -1,0 +1,34 @@
+@import "./components/navigation";
+@import "./components/header";
+@import "./components/main";
+@import "./components/aside";
+@import "./components/footer";
+
+@import "./config/mixins";
+@import "./config/reset";
+@import "./config/variables";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.wrapper {
+    max-width: 1280px;
+    display: flex; 
+    background-color: #EAEAEA; 
+}
+
+
+
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Lato', sans-serif;*/
