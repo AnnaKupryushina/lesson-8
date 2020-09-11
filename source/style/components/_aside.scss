@@ -1,0 +1,81 @@
+.aside__footer {
+    position: relative;
+    right: 270px;
+    top: 175px;
+}
+
+.aside {
+    width: 273px;
+    height: 612px;
+    overflow-y: scroll;
+    background: #ffffff;
+
+    &__button {
+        @include flex;
+        width: 91px;
+        height: 48px;
+        border: none;
+        background: $primary-color;
+  }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__icons {
+            width: 20px;
+            height: 16px;
+    }
+    &__section {
+        @include flex;
+        justify-content: space-around;
+        
+    }
+    &__img {
+        width: 42px;
+        height: 42px;
+        margin-top: 24px;
+    }
+    
+    &__chat {
+        width: 20px;
+        height: 16px;
+        margin-top: 25px;
+    }
+    &__name {
+        @include font-chart;
+        color: #777777;
+        font-size: 13px;
+        margin-top: 25px;
+    }
+    &__role {
+        @include font-chart;
+        font-size: 10px;
+    }
+    &__line {
+        width: 233px;
+        height: 1px;
+        margin-left: 20px;
+        margin-top: 19px;
+        border: none;
+        background-color: #F1F1F1;
+    }
+    &__input {
+        margin-left: 18px;
+        border: none;
+        @include font-chart;
+        color: #C0C0C0;
+        font-size: 12px;
+
+    }
+    &__zoom {
+        margin-right: 14px;
+        margin-left: 30px;
+    }
+
+}
+
+.aside__button:hover {
+    background: rgb(160, 54, 54);  
+}
+

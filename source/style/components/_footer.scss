@@ -1,0 +1,52 @@
+
+.footer {
+  width: 273px;
+  background: #fff;
+  
+  &__title {
+    text-align: center;
+    padding-top: 24px;
+    @include font-chart;
+    color: #777777;
+    font-size: 14px;
+  }
+  &__companys {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 29px;
+  
+  }
+  &__link {
+    @include flex;
+    width: 55px;
+    height: 55px;
+    margin-right: 17px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+  
+    &--rdio {
+        margin-left: 39px;
+        background: linear-gradient(to right, #8f7ee4,#ae68da);
+    }
+    &--css {
+        background: linear-gradient(to right, #6bbac0, #5af0ca);
+    }
+
+    &--deviantart {
+        background: linear-gradient(to right, #d1929a, #c99b7b);
+    }
+
+    &--xing {
+        margin-left: 39px;
+        background: linear-gradient(to right, #9c64c2, #6b83e2);
+    }
+
+    &--vimeo {
+        background: linear-gradient(to right, #6588c5, #3da5b1);
+    }
+
+    &--vk {
+        background: linear-gradient(to right,#df5e14, #FBD78C);
+        }
+    }
+}

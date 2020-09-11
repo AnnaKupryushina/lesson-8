@@ -1,0 +1,171 @@
+@import "../config/mixins";
+@import "../config/variables";
+
+.header{
+  /*height: 169px;*/
+}
+
+
+/* Header user
+==========================================*/
+.user {
+  display: flex;
+  width: 1298px;
+  background-color: #FFFFFF;
+  border-bottom:1px solid #F1F1F1;
+
+    &__item {
+      @include flex;
+      width: 60px;
+      height: 71px;
+      border-right:1px solid #F1F1F1 ;
+}  
+    &__item--left {
+      @include flex;
+      width: 60px;
+      height: 71px;
+      border-left:1px solid #F1F1F1 ;
+    }  
+    &__img--left {
+      display: flex;
+      width: 71px;
+      height: 71px;
+    }
+  }
+  
+.user__figure {
+  width: 33px;
+  height: 18px;
+  background:rgb(236, 109, 109);
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.figure__round {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-right: 1px;
+  
+}
+.user__input {
+  margin: 0 auto;
+  padding-top: 17px;
+}
+.input__item {
+  width: 299px;
+  height: 34px;
+  padding-left: 13px;
+  border:1px solid #C8C8C8;
+  border-radius: 40px;
+  background-color:#f3edede0;
+  text-overflow: ellipsis;
+  outline: none;
+
+}
+
+input::placeholder {
+  @include font;
+  color: #C8C8C8;
+  font-size: 0.8em;
+ 
+}
+
+.input__img {
+  z-index: 10;
+  position: relative;
+  right: 35px;
+  
+}
+.user__info {
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  width: 174px;
+  height: 70px;
+}
+.info__name {
+  padding-top: 22px;
+  padding-bottom: 9px;
+  @include font;
+  font-weight: 700;
+  background:$primary-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 13px;
+
+}
+.info__role {
+  @include font;
+  color:#BFBFBF;
+  font-size: 10px;
+
+}
+.user__settings {
+  @include flex;
+  flex-direction: column;
+  margin-right: 18px;
+}
+.settings__round {
+  margin-bottom: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color:#BFBFBF;
+}
+
+/* Header statics
+==========================================*/
+.statics {
+    width: 1298px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 22px;
+    padding-top: 22px;
+    background-color: #FFFFFF;
+
+    &__block {
+      @include flex;
+      flex-direction: column;
+    }
+    &__title {
+      @include font;
+      padding-bottom: 9px;
+      font-weight: 700;
+      font-size: 12px;
+      color:#777777 ;
+    }
+    &__number{
+      @include font;
+      padding-bottom: 8px;
+      font-weight: 700;
+      font-size: 20px;
+      background:$primary-color;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &__count {
+      @include font;
+      font-weight: 700;
+      font-size: 12px;
+      color: #BFBFBF;
+    }
+    &__add{
+      @include font;
+      font-weight: 700;
+      font-size: 12px;
+      background:$primary-color;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &__link {
+      text-decoration:none ;
+    }
+}
+
+
+
+
+

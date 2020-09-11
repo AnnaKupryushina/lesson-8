@@ -1,0 +1,52 @@
+@import "../config/mixins";
+@import "../config/reset";
+@import "../config/variables";
+
+.nav {
+    width: 74px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+
+&__logo {
+    @include flex;
+    flex-direction: column;
+    width: 70px;
+    height: 71px;
+    background-color:#F6F6F6;
+    z-index: 10;
+    box-shadow:  5px 0 5px rgba(194, 188, 188, 0.8);
+}
+&__menu {
+    height: 929px;
+    width: 70px;
+    background:$primary-color;
+   
+}
+&__link {
+    @include flex;
+    @include font;
+    flex-direction: column;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+&__link--button{
+    margin-top: 509px;
+    
+}
+&__img {
+    padding-bottom: 10px;
+    padding-top: 29px;
+}
+
+}
+
+.nav__link--logo {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 30px;
+   background:$primary-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
